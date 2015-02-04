@@ -25,3 +25,6 @@
 [submodule "elisp/dired-plus"]
 	path = elisp/dired-plus
 	url = https://github.com/emacsmirror/dired-plus.git
+[submodule "elisp/dired-details"]
+	path = elisp/dired-details
+	url = https://github.com/emacsmirror/dired-details.git
