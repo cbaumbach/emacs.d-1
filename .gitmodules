@@ -22,3 +22,6 @@
 [submodule "elisp/undo-tree"]
 	path = elisp/undo-tree
 	url = http://www.dr-qubit.org/git/undo-tree.git
+[submodule "elisp/dired-plus"]
+	path = elisp/dired-plus
+	url = https://github.com/emacsmirror/dired-plus.git
