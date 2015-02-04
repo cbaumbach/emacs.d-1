@@ -1,0 +1,5 @@
+auto-save-list/
+.mc-lists.el
+.\#*
+\#*#
+elpa/
