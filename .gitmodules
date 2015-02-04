@@ -19,3 +19,6 @@
 [submodule "elisp/paredit"]
 	path = elisp/paredit
 	url = http://mumble.net/~campbell/git/paredit.git
+[submodule "elisp/undo-tree"]
+	path = elisp/undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git
