@@ -7,3 +7,6 @@
 [submodule "elisp/expand-region"]
 	path = elisp/expand-region
 	url = https://github.com/magnars/expand-region.el.git
+[submodule "elisp/git-modes"]
+	path = elisp/git-modes
+	url = https://github.com/magit/git-modes.git
