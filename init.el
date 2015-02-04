@@ -15,7 +15,6 @@
 
 (require 'setup-appearance)
 (require 'setup-defuns)
-(require 'setup-package-repositories)
 (require 'setup-whitespace)
 (require 'setup-scrolling)
 (require 'setup-dired-mode)
