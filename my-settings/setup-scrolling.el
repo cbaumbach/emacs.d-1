@@ -4,7 +4,4 @@
 ;;; Preserve screen position when scrolling by screenfuls.
 (setq scroll-preserve-screen-position t)
 
-;;; Change order for recenter-top-bottom.
-(setq recenter-positions '(top bottom middle))
-
 (provide 'setup-scrolling)
