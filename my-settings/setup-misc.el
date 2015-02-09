@@ -7,6 +7,9 @@
 ;;; No backup files, please.
 (setq make-backup-files nil)
 
+;;; Save bookmarks inside of .emacs.d.
+(setq bookmark-default-file "~/.emacs.d/bookmarks")
+
 (defun leave-point-at-beginning-of-match ()
   "Leave point at beginning of match when searching forward."
   (unless isearch-mode-end-hook-quit
