@@ -21,6 +21,12 @@
 ;;; Use visual bell.
 (setq visible-bell t)
 
+;;; Make modeline of active window stand out more.
+(set-face-foreground 'modeline "black")
+(set-face-background 'modeline "yellow")
+(set-face-foreground 'modeline-inactive "black")
+(set-face-background 'modeline-inactive "DarkSeaGreen2")
+
 ;;; Turn on font lock mode globally.
 (global-font-lock-mode t)
 
