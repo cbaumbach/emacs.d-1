@@ -23,9 +23,9 @@
 
 ;;; Make modeline of active window stand out more.
 (set-face-foreground 'modeline "black")
-(set-face-background 'modeline "yellow")
-(set-face-foreground 'modeline-inactive "black")
-(set-face-background 'modeline-inactive "DarkSeaGreen2")
+(set-face-background 'modeline "DarkSeaGreen2")
+(set-face-foreground 'modeline-inactive "DarkSeaGreen2")
+(set-face-background 'modeline-inactive "black")
 
 ;;; Turn on font lock mode globally.
 (global-font-lock-mode t)
