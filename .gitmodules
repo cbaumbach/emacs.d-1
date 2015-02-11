@@ -28,3 +28,6 @@
 [submodule "elisp/dired-details"]
 	path = elisp/dired-details
 	url = https://github.com/emacsmirror/dired-details.git
+[submodule "elisp/magit"]
+	path = elisp/magit
+	url = https://github.com/magit/magit.git

@@ -33,6 +33,7 @@
 (require 'setup-indentation)
 (require 'setup-fonts)
 (require 'setup-misc)
+(require 'setup-magit)
 (require 'setup-keybindings)
 
 ;;; Load aliases.
