@@ -20,4 +20,11 @@
   (let ((path (buffer-file-name)))
     (insert (substring path (1+ (position ?/ path :from-end t))))))
 
+(defun copy-file-name-to-register (c)
+  (interactive "cCopy to register:")
+  (let ((filename (buffer-file-name)))
+    (if filename
+        (set-register c (cons 'file filename))
+      (error "Buffer not associated with any file."))))
+
 (provide 'setup-defuns)
