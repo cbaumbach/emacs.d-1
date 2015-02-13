@@ -21,6 +21,7 @@
     (insert (substring path (1+ (position ?/ path :from-end t))))))
 
 (defun copy-file-name-to-register (c)
+  "Copy file name of current buffer to register."
   (interactive "cCopy to register:")
   (let ((filename (buffer-file-name)))
     (if filename
