@@ -62,5 +62,6 @@
 (global-set-key (kbd "C-x C-b") 'switch-to-buffer-list-other-window)
 (global-set-key (kbd "C-x ra") 'append-to-register)
 (global-set-key (kbd "C-x rF") 'copy-file-name-to-register)
+(global-set-key (kbd "C-w") 'delete-or-kill-region)
 
 (provide 'setup-keybindings)
