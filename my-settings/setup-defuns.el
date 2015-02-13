@@ -28,4 +28,13 @@
         (set-register c (cons 'file filename))
       (error "Buffer not associated with any file."))))
 
+(defun delete-or-kill-region (n)
+  "With prefix arg same as delete-region, otherwise kill-region."
+  (interactive "P")
+  (let ((start (region-beginning))
+        (end (region-end)))
+    (if (null n)
+        (kill-region start end)
+      (delete-region start end))))
+
 (provide 'setup-defuns)
