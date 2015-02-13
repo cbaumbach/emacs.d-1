@@ -60,5 +60,6 @@
 (global-set-key (kbd "<f5>") 'slime-selector)
 (global-set-key (kbd "M-%") 'query-replace-regexp)
 (global-set-key (kbd "C-x C-b") 'switch-to-buffer-list-other-window)
+(global-set-key (kbd "C-x ra") 'append-to-register)
 
 (provide 'setup-keybindings)
