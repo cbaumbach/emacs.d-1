@@ -21,26 +21,8 @@
     (insert (substring path (1+ (position ?/ path :from-end t))))))
 
 (defun copy-file-name-to-register (file-name c)
-  "Copy file name of into register."
-  (interactive (let ((insert-default-directory t)
-                     (read-file-name-completion-ignore-case t))
-                 (if current-prefix-arg
-                     (list (read-file-name
-                            "File name: "      ; prompt
-                            nil                ; directory
-                            (buffer-file-name) ; default
-                            nil)               ; require-match
-                           (read-char "Copy to register: " nil))
-                   (list (buffer-file-name)
-                         (read-char "Copy to register: " nil)))))
-  (cond ((null file-name)
-         (error "Buffer not associated with any file."))
-        ((not (funcall #'file-regular-p file-name))
-         (error "Not a regular file: %s" file-name))
-        ((not (funcall #'file-readable-p file-name))
-         (error "Not a readable file: %s" file-name))
-        (t
-         (set-register c (cons 'file file-name)))))
+  (interactive "fFile name: \ncCopy to register:")
+  (set-register c (cons 'file file-name)))
 
 (defun delete-or-kill-region (n)
   "With prefix arg same as delete-region, otherwise kill-region."
