@@ -63,5 +63,6 @@
 (global-set-key (kbd "C-x ra") 'append-to-register)
 (global-set-key (kbd "C-x rF") 'copy-file-name-to-register)
 (global-set-key (kbd "C-w") 'delete-or-kill-region)
+(define-key help-map "a" 'apropos)
 
 (provide 'setup-keybindings)
