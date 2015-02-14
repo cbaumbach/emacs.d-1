@@ -13,4 +13,11 @@
 (setq-default dired-details-hidden-string "--- ")
 (dired-details-install)
 
+;;; Adjust M-< und M-> to jump to the first and last file/directory in
+;;; dired buffer.
+(add-hook 'dired-mode-hook
+          #'(lambda ()
+              (local-set-key (kbd "M-<") 'beginning-of-dired-buffer)
+              (local-set-key (kbd "M->") 'end-of-dired-buffer)))
+
 (provide 'setup-dired-mode)
