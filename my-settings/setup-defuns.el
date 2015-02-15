@@ -21,6 +21,7 @@
     (insert (substring path (1+ (position ?/ path :from-end t))))))
 
 (defun copy-file-name-to-register (file-name c)
+  "Copy file name to register."
   (interactive "fFile name: \ncCopy to register:")
   (set-register c (cons 'file file-name)))
 
