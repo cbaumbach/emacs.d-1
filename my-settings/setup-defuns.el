@@ -25,14 +25,12 @@
   (interactive "fFile name: \ncCopy to register:")
   (set-register c (cons 'file file-name)))
 
-(defun delete-or-kill-region (n)
+(defun delete-or-kill-region (start end)
   "With prefix arg same as delete-region, otherwise kill-region."
-  (interactive "P")
-  (let ((start (region-beginning))
-        (end (region-end)))
-    (if (null n)
-        (kill-region start end)
-      (delete-region start end))))
+  (interactive "r")
+  (if current-prefix-arg
+      (delete-region start end)
+    (kill-region start end)))
 
 (defun beginning-of-dired-buffer ()
   "Move to first file or directory in dired buffer skipping `.' and `..'."
