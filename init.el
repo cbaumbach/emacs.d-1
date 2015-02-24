@@ -30,6 +30,7 @@
 (require 'setup-auto-saving)
 (require 'setup-ediff)
 (require 'setup-ess-mode)
+(require 'setup-tex-modes)
 (require 'setup-indentation)
 (require 'setup-fonts)
 (require 'setup-misc)
