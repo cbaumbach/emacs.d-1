@@ -1,6 +1,6 @@
 (add-hook 'latex-mode-hook
           (lambda ()
-            (define-key latex-mode-map (kbd "M-}") 'forward-latex-environment)
-            (define-key latex-mode-map (kbd "M-{") 'backward-latex-environment)))
+            (setq paragraph-start "\\f\\|[ \\t%]*$")
+            (setq paragraph-separate "[ \\t\\f%]*$")))
 
 (provide 'setup-tex-modes)
