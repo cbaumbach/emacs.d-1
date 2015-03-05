@@ -2,7 +2,7 @@
 
 (set-face-foreground 'ace-jump-face-foreground "green")
 
-;;; Restrict scope to current windows.
-(setq ace-jump-mode-scope 'window)
+;;; Search across all windows in a frame.
+(setq ace-jump-mode-scope 'frame)
 
 (provide 'setup-ace-jump-mode)
