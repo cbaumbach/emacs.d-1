@@ -49,4 +49,7 @@
 ;;; Use cperl-mode instead of perl-mode.
 (defalias 'perl-mode 'cperl-mode)
 
+;;; Cycle thru buffer-local mark ring with C-u [C-SPC]+.
+(setq set-mark-command-repeat-pop 1)
+
 (provide 'setup-misc)
