@@ -46,5 +46,12 @@
   (end-of-buffer)
   (diredp-previous-line 1))
 
+(defmacro match-any (&rest patterns)
+  "Make a predicate saying whether its argument matches any of
+the regexps in PATTERNS."
+  `(lambda (s)
+     (let ((case-fold-search nil))
+       (or ,@(mapcar #'(lambda (x) `(string-match ,x s))
+                     patterns)))))
 
 (provide 'setup-defuns)
