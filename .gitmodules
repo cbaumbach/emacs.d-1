@@ -37,3 +37,6 @@
 [submodule "elisp/slime"]
 	path = elisp/slime
 	url = https://github.com/slime/slime.git
+[submodule "elisp/dash"]
+	path = elisp/dash
+	url = https://github.com/magnars/dash.el.git

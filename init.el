@@ -3,6 +3,7 @@
 
 (require 'setup-load-path)
 (require 'setup-appearance)
+(require 'setup-dash)
 (require 'setup-defuns)
 (require 'setup-whitespace)
 (require 'setup-scrolling)
