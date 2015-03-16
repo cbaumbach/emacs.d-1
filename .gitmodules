@@ -34,3 +34,6 @@
 [submodule "elisp/haskell-mode"]
 	path = elisp/haskell-mode
 	url = https://github.com/haskell/haskell-mode.git
+[submodule "elisp/slime"]
+	path = elisp/slime
+	url = https://github.com/slime/slime.git

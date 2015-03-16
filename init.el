@@ -25,6 +25,7 @@
 (require 'setup-fonts)
 (require 'setup-misc)
 (require 'setup-magit)
+(require 'setup-slime)
 (require 'setup-keybindings)
 
 ;;; Load aliases.
