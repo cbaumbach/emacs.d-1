@@ -1,18 +1,7 @@
-;;; Inhibit loading default init file.
-(setq inhibit-default-init t)
-
-;;; Setup load-path.
-(setq site-lisp-dir
-      (expand-file-name "elisp" user-emacs-directory))
-
-(add-to-list 'load-path site-lisp-dir)
-
-(dolist (project (directory-files site-lisp-dir t "\\w+"))
-  (when (file-directory-p project)
-    (add-to-list 'load-path project)))
-
+;;; Add directory with setup files to load-path.
 (add-to-list 'load-path (concat user-emacs-directory "my-settings"))
 
+(require 'setup-load-path)
 (require 'setup-appearance)
 (require 'setup-defuns)
 (require 'setup-whitespace)

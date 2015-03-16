@@ -1,3 +1,6 @@
+;;; Inhibit loading default init file.
+(setq inhibit-default-init t)
+
 ;;; Explicitly set foreground and background colors in ms windows.
 (when (string-equal system-type "windows-nt")
   (set-background-color "black")
