@@ -2,9 +2,10 @@
 (add-to-list 'load-path (concat user-emacs-directory "my-settings"))
 
 (require 'setup-load-path)
-(require 'setup-appearance)
 (require 'setup-dash)
 (require 'setup-defuns)
+(require 'clean-up-load-path)
+(require 'setup-appearance)
 (require 'setup-whitespace)
 (require 'setup-scrolling)
 (require 'setup-dired-mode)
