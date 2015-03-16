@@ -46,16 +46,5 @@
   (end-of-buffer)
   (diredp-previous-line 1))
 
-(defun forward-latex-environment ()
-  "Jump over next top-level latex environment."
-  (interactive)
-  (when (search-forward-regexp "^\\\\end{" nil t)
-    (search-forward-regexp "^$")))
-
-(defun backward-latex-environment ()
-  "Jump before previous top-level latex environment."
-  (interactive)
-  (when (search-backward-regexp "^\\\\begin{" nil t)
-    (search-backward-regexp "^$")))
 
 (provide 'setup-defuns)
