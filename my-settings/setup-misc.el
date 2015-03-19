@@ -33,6 +33,9 @@
 ;;; adding new element.
 (setq history-delete-duplicates t)
 
+;;; Don't add input matching the last item on the comint input ring.
+(setq-default comint-input-ignoredups t)
+
 ;;; Set width for formatting man pages.
 (setq Man-width 90)
 
