@@ -10,6 +10,20 @@
 ;;; Save bookmarks inside of .emacs.d.
 (setq bookmark-default-file "~/.emacs.d/bookmarks")
 
+;;; Make hippie-expand search for line matches across all buffers.
+(setq hippie-expand-try-functions-list
+      '(try-complete-file-name-partially
+        try-complete-file-name
+        try-expand-all-abbrevs
+        try-expand-list
+        try-expand-line
+        try-expand-line-all-buffers     ; inserted
+        try-expand-dabbrev
+        try-expand-dabbrev-all-buffers
+        try-expand-dabbrev-from-kill
+        try-complete-lisp-symbol-partially
+        try-complete-lisp-symbol))
+
 (defun leave-point-at-beginning-of-match ()
   "Leave point at beginning of match when searching forward."
   (unless isearch-mode-end-hook-quit
