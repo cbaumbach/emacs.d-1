@@ -1,3 +1,5 @@
+(require 'ediff)
+
 ;;; Never open a new frame for ediff.
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
