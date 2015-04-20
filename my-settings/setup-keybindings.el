@@ -47,6 +47,9 @@
 (global-set-key (kbd "C-h n") 'repeatified-mc/mark-next-like-this)
 (global-set-key (kbd "C-h l") 'mc/edit-lines)
 
+;;; Add autoloads for some functions before binding keys to them.
+(autoload 'copy-from-above-command "misc" nil 'interactive)
+
 ;;; Use hippie-expand instead of dabbrev-expand.
 (global-set-key (kbd "M-/") 'hippie-expand)
 
@@ -63,6 +66,7 @@
 (global-set-key (kbd "C-x ra") 'append-to-register)
 (global-set-key (kbd "C-x rF") 'copy-file-name-to-register)
 (global-set-key (kbd "C-w") 'delete-or-kill-region)
+(global-set-key (kbd "C-,") 'copy-from-above-command)
 (define-key help-map "a" 'apropos)
 
 (provide 'setup-keybindings)
