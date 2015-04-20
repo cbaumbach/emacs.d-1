@@ -49,6 +49,7 @@
 
 ;;; Add autoloads for some functions before binding keys to them.
 (autoload 'copy-from-above-command "misc" nil 'interactive)
+(autoload 'zap-up-to-char "misc" nil 'interactive)
 
 ;;; Use hippie-expand instead of dabbrev-expand.
 (global-set-key (kbd "M-/") 'hippie-expand)
@@ -67,6 +68,7 @@
 (global-set-key (kbd "C-x rF") 'copy-file-name-to-register)
 (global-set-key (kbd "C-w") 'delete-or-kill-region)
 (global-set-key (kbd "C-,") 'copy-from-above-command)
+(global-set-key (kbd "M-z") 'zap-up-to-char)
 (define-key help-map "a" 'apropos)
 
 (provide 'setup-keybindings)
