@@ -67,7 +67,7 @@
 (global-set-key (kbd "C-x ra") 'append-to-register)
 (global-set-key (kbd "C-x rF") 'copy-file-name-to-register)
 (global-set-key (kbd "C-w") 'delete-or-kill-region)
-(global-set-key (kbd "C-,") 'copy-from-above-command)
+(global-set-key (kbd "C-h C-SPC") 'copy-from-above-command)
 (global-set-key (kbd "M-z") 'zap-up-to-char)
 (define-key help-map "a" 'apropos)
 
