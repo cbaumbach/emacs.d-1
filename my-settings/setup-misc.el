@@ -61,7 +61,9 @@
       ps-font-size 10
       ps-print-header nil
       ps-left-margin 72
-      ps-right-margin 72)
+      ps-right-margin 72
+      ps-bottom-margin 72
+      ps-top-margin 72)
 
 ;;; Use cperl-mode instead of perl-mode.
 (defalias 'perl-mode 'cperl-mode)
